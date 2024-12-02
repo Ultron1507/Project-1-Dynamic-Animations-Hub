@@ -1,5 +1,6 @@
 {
   "name": "animated",
+  "homepage": "https://github.com/Ultron1507/Project-1-Dynamic-Animations-Hub",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npmrun build",
+    "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "framer-motion": "^11.11.13",
